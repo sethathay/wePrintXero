@@ -1,0 +1,13 @@
+<h3>Invoice Reminders</h3>
+<table class="table table-bordered table-striped table-collapsed">
+    <thead>
+        <tr>
+            <td>Enabled</td>
+        </tr>
+    </thead>
+    {{#each invoicereminders}}
+    <tr>
+        <td>{{ this.Enabled }}</td>
+    </tr>
+    {{/each}}
+</table>

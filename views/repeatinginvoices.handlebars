@@ -1,0 +1,33 @@
+<h3>Repeating Invoices</h3>
+<table class="table table-bordered table-collapsed table-hover">
+    <thead>
+        <tr>
+            <th>Invoice ID</th>
+            <th>Next Payment Date</th>
+            <th>Status</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each repeatinginvoices}}
+    <tr class="accordion-toggle" data-toggle="collapse" data-target="#{{this.InvoiceID}}">
+        {{#ifCond this.Type '==' 'ACCREC'}}
+        <td
+          ><a href="https://go.xero.com/RepeatTransactions/Edit.aspx?InvoiceID={{ this.RepeatingInvoiceID }}&type=AR" target="_blank">
+            {{this.RepeatingInvoiceID}}
+          </a>
+        </td>
+        {{else}}
+        <td>
+          <a href="https://go.xero.com/RepeatTransactions/Edit.aspx?InvoiceID={{ this.RepeatingInvoiceID }}&type=AP" target="_blank">
+            {{this.RepeatingInvoiceID}}
+          </a>
+        </td>
+        {{/ifCond}}
+        <td>{{ this.Schedule.NextScheduledDate }}</td>
+        <td>{{ this.Status}}</td>
+        <td>{{ this.Total }}</td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>

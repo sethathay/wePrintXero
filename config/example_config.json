@@ -1,0 +1,17 @@
+{
+    "APPTYPE": "PUBLIC",
+    "partner": {
+        "authorizeCallbackUrl": "http://localhost:3100/access",
+        "consumerKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "privateKeyPath": "/some/path/to/privatekey.pem",
+        "userAgent": "Tester (PARTNER) - Application for testing Xero",
+        "redirectOnError": true
+    },
+    "public": {
+        "authorizeCallbackUrl": "http://localhost:3100/access",
+        "consumerKey": "QH1BTM4GNH0X3PFDCMHGAGBQ0XQDFX",
+        "consumerSecret": "JQ9OVNNOV1P3BZXFQIZWBVHXHHUXIG",
+        "userAgent": "Tester (PUBLIC) - Application for testing Xero",
+        "redirectOnError": true
+    }
+}

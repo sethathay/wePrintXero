@@ -1,0 +1,15 @@
+<h3>Attachments</h3>
+<table class="table table-bordered table-collapsed table-hover">
+    <thead>
+        <tr>
+            <th>File Name</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each attachments}}
+    <tr>
+      <td><a href="/download?entityID={{ ../InvoiceID }}&entityType=INVOICE&fileId={{ this.AttachmentID }}">{{this.FileName}}</a> ({{this.MimeType}} - {{this.ContentLength}} bytes)</td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>

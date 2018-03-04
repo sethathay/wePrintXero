@@ -1,0 +1,27 @@
+{
+  "name": "xero-node-sample-app",
+  "version": "0.0.1",
+  "description": "Sample application for the xero-node library.",
+  "main": "index.js",
+  "repository": "git@github.com:XeroAPI/xero-node-sample-app.git",
+  "author": "Jordan Walsh <jordan.walsh@.xero.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cloudconvert": "^1.1.2",
+    "dateformat": "^3.0.2",
+    "docxtemplater": "^3.2.0",
+    "express": "3.4.8",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.5",
+    "jszip": "^2.6.1",
+    "node-msoffice-pdf": "0.0.7",
+    "numeral": "^2.0.6",
+    "xero-node": "2.5.3"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}
